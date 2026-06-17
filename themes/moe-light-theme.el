@@ -1079,8 +1079,4 @@ Moe, moe, kyun!")
 
 (provide-theme 'moe-light)
 
-;; Local Variables:
-;; no-byte-compile: t
-;; End:
-
 ;;; moe-light-theme.el ends here

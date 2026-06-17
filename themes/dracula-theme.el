@@ -1096,8 +1096,4 @@ read it before opening a new issue about your will.")
 
 (provide-theme 'dracula)
 
-;; Local Variables:
-;; indent-tabs-mode: nil
-;; End:
-
 ;;; dracula-theme.el ends here

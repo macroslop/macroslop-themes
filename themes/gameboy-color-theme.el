@@ -1,0 +1,132 @@
+;;; gameboy-color-theme.el --- Game Boy Color–inspired dark theme -*- lexical-binding: t; -*-
+
+(deftheme gameboy-color)
+
+(let* ((bg "#0E0E0E")
+       (black "#000000")
+       (black-2 "#2A2A2A")
+       (fg "#E8E8E8")
+       (white "#FFFFFF")
+       (gray "#4E4E4E")
+       (berry "#B70940")
+       (grape "#3C3C9B")
+       (kiwi "#6DB021")
+       (dandelion "#D9AB05")
+       (teal "#00938A"))
+
+  (custom-theme-set-faces
+   'gameboy-color
+
+   `(default ((t (:background ,bg :foreground ,fg))))
+   `(cursor ((t (:background ,gray))))
+
+   `(fringe ((t (:background ,bg :foreground ,gray))))
+   `(line-number ((t (:foreground ,gray :background ,bg))))
+   `(line-number-current-line ((t (:foreground ,fg :background ,bg))))
+   `(highlight ((t (:background ,grape))))
+   `(hl-line ((t (:background ,black-2))))
+   `(region ((t (:background ,grape :foreground ,fg))))
+   `(secondary-selection ((t (:background ,teal :foreground ,bg))))
+   `(isearch ((t (:background ,dandelion :foreground ,bg))))
+   `(lazy-highlight ((t (:background ,teal :foreground ,bg))))
+   `(trailing-whitespace ((t (:background ,berry))))
+   `(show-paren-match ((t (:background ,kiwi :foreground ,bg))))
+   `(header-line ((t (:background ,bg :foreground ,gray))))
+
+   `(mode-line ((t (:background ,grape :foreground ,fg))))
+   `(mode-line-inactive ((t (:background ,bg :foreground ,gray))))
+   `(mode-line-emphasis ((t (:foreground ,dandelion))))
+   `(mode-line-highlight ((t (:foreground ,kiwi))))
+
+   `(vertical-border ((t (:foreground ,gray))))
+
+   `(minibuffer-prompt ((t (:foreground ,kiwi))))
+
+   `(error ((t (:foreground ,berry))))
+   `(warning ((t (:foreground ,dandelion))))
+   `(success ((t (:foreground ,kiwi))))
+
+   `(font-lock-builtin-face ((t (:foreground ,teal))))
+   `(font-lock-comment-delimiter-face ((t (:foreground ,gray))))
+   `(font-lock-comment-face ((t (:foreground ,gray))))
+   `(font-lock-constant-face ((t (:foreground ,grape))))
+   `(font-lock-doc-face ((t (:foreground ,gray))))
+   `(font-lock-doc-string-face ((t (:foreground ,gray))))
+   `(font-lock-function-name-face ((t (:foreground ,teal))))
+   `(font-lock-keyword-face ((t (:foreground ,berry))))
+   `(font-lock-negation-char-face ((t (:foreground ,berry))))
+   `(font-lock-preprocessor-face ((t (:foreground ,teal))))
+   `(font-lock-regexp-grouping-backslash ((t (:foreground ,dandelion))))
+   `(font-lock-regexp-grouping-construct ((t (:foreground ,berry))))
+   `(font-lock-string-face ((t (:foreground ,kiwi))))
+   `(font-lock-type-face ((t (:foreground ,berry))))
+   `(font-lock-variable-name-face ((t (:foreground ,grape))))
+   `(font-lock-warning-face ((t (:foreground ,dandelion))))
+
+   `(completions-annotations ((t (:foreground ,gray))))
+   `(completions-common-part ((t (:foreground ,kiwi))))
+   `(completions-first-difference ((t (:foreground ,dandelion))))
+
+   `(org-block ((t (:background ,bg :foreground ,fg))))
+   `(org-block-begin-line ((t (:foreground ,gray))))
+   `(org-block-end-line ((t (:foreground ,gray))))
+   `(org-code ((t (:foreground ,kiwi))))
+   `(org-date ((t (:foreground ,grape))))
+   `(org-document-title ((t (:foreground ,kiwi))))
+   `(org-done ((t (:foreground ,kiwi))))
+   `(org-level-1 ((t (:foreground ,berry))))
+   `(org-level-2 ((t (:foreground ,grape))))
+   `(org-level-3 ((t (:foreground ,kiwi))))
+   `(org-level-4 ((t (:foreground ,dandelion))))
+   `(org-level-5 ((t (:foreground ,teal))))
+   `(org-level-6 ((t (:foreground ,fg))))
+   `(org-level-7 ((t (:foreground ,gray))))
+   `(org-level-8 ((t (:foreground ,gray))))
+   `(org-link ((t (:foreground ,teal :underline t))))
+   `(org-warning ((t (:foreground ,berry))))
+   `(org-verbatim ((t (:foreground ,teal))))
+
+   `(outline-1 ((t (:foreground ,berry))))
+   `(outline-2 ((t (:foreground ,grape))))
+   `(outline-3 ((t (:foreground ,kiwi))))
+   `(outline-4 ((t (:foreground ,dandelion))))
+   `(outline-5 ((t (:foreground ,teal))))
+   `(outline-6 ((t (:foreground ,fg))))
+   `(outline-7 ((t (:foreground ,gray))))
+   `(outline-8 ((t (:foreground ,gray))))
+
+   `(markdown-blockquote-face ((t (:foreground ,dandelion))))
+   `(markdown-bold-face ((t (:foreground ,fg))))
+   `(markdown-header-face ((t (:foreground ,kiwi))))
+   `(markdown-link-face ((t (:foreground ,teal))))
+   `(markdown-inline-code-face ((t (:foreground ,kiwi))))
+   `(markdown-url-face ((t (:foreground ,teal))))
+
+   `(company-tooltip ((t (:background ,bg :foreground ,fg))))
+   `(company-tooltip-selection ((t (:background ,grape))))
+   `(company-tooltip-common ((t (:foreground ,kiwi))))
+   `(company-scrollbar-bg ((t (:background ,gray))))
+   `(company-scrollbar-fg ((t (:background ,teal))))
+
+   `(link ((t (:foreground ,teal :underline t))))
+   `(link-visited ((t (:foreground ,grape :underline t))))
+
+   `(diff-added ((t (:foreground ,kiwi))))
+   `(diff-removed ((t (:foreground ,berry))))
+   `(diff-changed ((t (:foreground ,dandelion))))
+
+   `(whitespace-space ((t (:foreground ,gray))))
+   `(whitespace-tab ((t (:foreground ,gray))))
+   `(whitespace-trailing ((t (:background ,berry))))
+
+   `(ansi-color-black ((t (:background ,bg :foreground ,bg))))
+   `(ansi-color-white ((t (:background ,fg :foreground ,fg))))
+   `(ansi-color-red ((t (:background ,berry :foreground ,berry))))
+   `(ansi-color-blue ((t (:background ,grape :foreground ,grape))))
+   `(ansi-color-green ((t (:background ,kiwi :foreground ,kiwi))))
+   `(ansi-color-yellow ((t (:background ,dandelion :foreground ,dandelion))))
+   `(ansi-color-cyan ((t (:background ,teal :foreground ,teal))))))
+
+(provide-theme 'gameboy-color)
+
+;;; gameboy-color-theme.el ends here

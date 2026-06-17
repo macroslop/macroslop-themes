@@ -69,7 +69,7 @@
    `(font-latex-string-face ((t (:foreground "#a9a9a9"))))
    `(font-lock-builtin-face ((t (:background ,bg :foreground ,fg))))
    `(font-lock-comment-delimiter-face ((t (:foreground "#808080"))))
-   `(font-lock-comment-face ((t (:foreground ,fg :weight bold))))
+   `(font-lock-comment-face ((t (:foreground ,fg-dark :weight bold :italic t))))
    `(font-lock-constant-face ((t (:foreground ,fg))))
    `(font-lock-doc-face ((t (:foreground ,fg :weight semi-bold))))
    `(font-lock-function-name-face ((t (:foreground ,fg))))
@@ -309,4 +309,5 @@
    `(orderless-match-face-3 ((t (:weight bold :underline t))))))
 
 (provide-theme 'eink)
+
 ;;; eink-theme.el ends here

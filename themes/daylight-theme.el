@@ -271,8 +271,4 @@
 
 (provide-theme 'daylight)
 
-;; Local Variables:
-;; no-byte-compile: t
-;; End:
-
 ;;; daylight-theme.el ends here

@@ -147,7 +147,7 @@ Moe, moe, kyun!")
    ;; Escape and prompt faces
    `(minibuffer-prompt ((,class (:foreground ,magenta-2))))
    `(escape-glyph ((,class (:foreground ,yellow-3))))
-   `(error ((,class (:foreground ,red-0))))
+   `(error ((,class (:foreground ,red-2))))
    `(warning ((,class (:foreground ,orange-1))))
    `(success ((,class (:foreground ,green-1))))
 
@@ -790,7 +790,7 @@ Moe, moe, kyun!")
    `(flymake-note-echo ((,class (:foreground ,yellow-2))))
 
    ;; Flycheck
-   `(flycheck-error ((,class (:background ,red-2 :foreground ,white-0 :bold t))))
+   `(flycheck-error ((,class (:foreground ,red-2 :bold t))))
    `(flycheck-warnline ((,class (:background ,orange-2 :foreground ,white-0 :bold t))))
 
    ;; Malabar
@@ -1105,9 +1105,5 @@ Moe, moe, kyun!")
    `(ansi-color-names-vector [,black-5 ,red-0 ,green-0 ,yellow-1 ,blue-1 ,purple-1 ,blue-0 ,white-1])))
 
 (provide-theme 'moe-dark)
-
-;; Local Variables:
-;; no-byte-compile: t
-;; End:
 
 ;;; moe-dark-theme.el ends here
