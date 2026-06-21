@@ -27,11 +27,13 @@
    `(font-lock-builtin-face ((t (:foreground ,yellow))))
    `(font-lock-comment-face ((t (:foreground ,gray :slant italic))))
    `(font-lock-constant-face ((t (:foreground ,yellow))))
-   `(font-lock-function-name-face ((t (:foreground ,yellow))))
-   `(font-lock-keyword-face ((t (:foreground ,yellow :weight bold))))
+   `(font-lock-function-name-face ((t (:foreground ,green))))
+   `(font-lock-keyword-face ((t (:foreground ,green))))
+   `(font-lock-operator-face ((t (:foreground ,green))))
+   `(font-lock-number-face ((t (:foreground ,blue))))
    `(font-lock-string-face ((t (:foreground ,green))))
-   `(font-lock-type-face ((t (:foreground ,fg))))
-   `(font-lock-variable-name-face ((t (:foreground ,fg))))
+   `(font-lock-type-face ((t (:foreground ,blue))))
+   `(font-lock-variable-name-face ((t (:foreground ,yellow))))
    `(font-lock-warning-face ((t (:foreground ,red :weight bold))))
 
    ;; Mode line
@@ -43,13 +45,16 @@
    `(line-number-current-line ((t (:foreground ,yellow :background ,bg :weight bold))))
 
    ;; Current line highlight
-   `(hl-line ((t (:background "#1a1a1a"))))
+   `(hl-line ((t (:background ,dark-blue))))
 
    ;; Matching parens
    `(show-paren-match ((t (:background ,green :foreground ,bg :weight bold))))
 
    ;; Links
    `(link ((t (:foreground ,fg :underline t))))
+
+   ;; Vertico
+   `(vertico-current ((t (:background ,dark-blue :foreground ,yellow))))
    ))
 
 (provide-theme 'brazil)
